@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #e8e3de;
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    
+   
+}
+
+.identacao {
+    text-indent: 3%;
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*Menu*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #765070;
+    text-align: right;
+    display: flex;
+    height: 15vh;
+}
+
+.Menu {
+    flex: 65%;
+    
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li a:hover {
+    color: #B296AE;
+}
+
+.sub_menu1 {
+    display: none;
+}
+
+nav ul li:hover .sub_menu1 {
+    display: block;
+    position: absulute;
+    background-color: #765070;
+    margin-top: 15px;
+    margin-left: -38px;
+}
+
+nav ul li:hover .sub_menu1 ul {
+    display: block;
+    position: absolute;
+    background-color: #765070;
+}
+
+nav ul li:hover .sub_menu1 ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.7s;
+
+   
+}
+
+nav ul li:hover .sub_menu1 ul li:hover {
+    background-color: #B296AE;
+}
+
+.logo {
+    position: absolute;
+    margin: 15px;
+    margin-bottom: 30px;
+    flex: 35%;
+}
+
+.titulo h1 {
+    font-size: 125%;
+    font-family: "Playfair Display", serif;
+    color: #FFF;
+    margin-left: 100px;
+    margin-top: 25px;
+    text-align: center;
+}
+/*fim do menu*/
+
+/*Corpo do texto*/
+
+/*funções de cada integrante*/
+.diana {
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto3x4 {
+    border-radius: 100px;
+}
+
+.diana h3 {
+    text-align: center;
+}
+
+.diana p {
+    justify-content: space-around;
+}
+
+.heloisa {
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.heloisa h3 {
+    text-align: center;
+}
+
+.heloisa p {
+    justify-content: space-around;
+}
+
+.julia {
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 35px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.julia h3 {
+    text-align: center;
+}
+
+.julia p {
+    justify-content: space-around;
+}
+
+.mariana {
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+}
+
+.mariana h3 {
+    text-align: center;
+}
+
+.mariana p {
+    justify-content: space-around;
+}
+
+.rebecca {
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+}
+
+.rebecca h3 {
+    text-align: center;
+}
+
+.rebecca p {
+    justify-content: space-around;
+}
+
+.vitoria {
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 35px;
+    margin-bottom: 20px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+}
+
+.vitoria h3 {
+    text-align: center;
+}
+
+.vitoria p {
+    justify-content: space-around;
+}
+
+/* .conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-wrap: wrap;
+   
+}
+
+@media(max-width: 1100px) {
+    .conteiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    header nav { /*menu geral*/
+        height: 100%;
+        display: flex ;
+        flex-direction: column;
+       
+    } /*fim do menu geral*/
+    body .identacao .conteiner{
+        margin-left: 0px;
+    }
+    .conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     
+    }
+  
+    .conteiner .diana {
+        width: 45%;
+        margin-left: 10px;
+    }
+    .conteiner .heloisa {
+        width: 45%;
+    }
+    .conteiner .julia {
+      width: 45%;
+    }
+    .conteiner .mariana{
+      width: 45%;
+    }
+    .rebecca {
+        width: 45%;
+    }
+    .vitoria {
+      width: 45%;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .conteiner {
+        height: 100%;
+        display: flex;
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Missão, Visão e Valores*/
+.missao {
+    width: 300px;
+    border: 5px solid #47023d;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #B296AE;
+    border-radius: 10px;
+    min-height: 120px;
+}
+
+.missao h3 {
+    text-align: center;
+}
+
+.visao {
+    width: 300px;
+    border: 5px solid #47023d;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #B296AE;
+    border-radius: 10px;
+    min-height: 120px;
+}
+
+.visao h3 {
+    text-align: center;
+}
+
+.valores {
+    width: 300px;
+    border: 5px solid #47023d;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    background-color: #B296AE;
+    border-radius: 10px;
+    min-height: 120px;
+}
+
+.valores h3 {
+    text-align: center;
+    padding: 0%;
+}
+
+.mvv {
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}

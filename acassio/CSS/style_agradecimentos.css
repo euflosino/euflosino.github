@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #e8e3de;
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
+   
+}
+
+.identacao {
+    text-indent: 3%;
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*Menu*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #765070;
+    text-align: right;
+    display: flex;
+    height: 15vh;
+}
+
+.Menu {
+    flex: 65%;
+    
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+nav ul li a:hover {
+    color: #B296AE;
+}
+
+.sub_menu1 {
+    display: none;
+}
+
+nav ul li:hover .sub_menu1 {
+    display: block;
+    position: absulute;
+    background-color: #765070;
+    margin-top: 15px;
+    margin-left: -38px;
+}
+
+nav ul li:hover .sub_menu1 ul {
+    display: block;
+    position: absolute;
+    background-color: #765070;
+}
+
+nav ul li:hover .sub_menu1 ul li {
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.7s;
+
+   
+}
+
+nav ul li:hover .sub_menu1 ul li:hover {
+    background-color: #B296AE;
+}
+
+.logo {
+    position: absolute;
+    margin: 15px;
+    margin-bottom: 30px;
+    flex: 35%;
+}
+
+.titulo h1 {
+    font-size: 125%;
+    font-family: "Playfair Display", serif;
+    color: #FFF;
+    margin-left: 100px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/*Corpo ddo texto*/
+.vini {
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto3x4 {
+    border-radius: 100px;
+}
+
+.vini h3 {
+    text-align: center;
+}
+.vini p {
+    justify-content: space-around;
+}
+.val{
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.val h3 {
+    text-align: center;
+}
+.val p {
+    justify-content: space-around;
+}
+.lucas{
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.lucas h3 {
+    text-align: center;
+}
+.lucas p {
+    justify-content: space-around;
+}
+.harry{
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.harry h3 {
+    text-align: center;
+}
+.harry p {
+    justify-content: space-around;
+}
+.josi{
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.josi h3 {
+    text-align: center;
+}
+.josi p {
+    justify-content: space-around;
+}
+.zanfra{
+    width: 400px;
+    border: 5px solid #507656;
+    padding: 10px;
+    /* margin-left: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px; */
+    background-color: #9fc0a3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.zanfra h3 {
+    text-align: center;
+}
+.zanfra p {
+    justify-content: space-around;
+}
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    flex-wrap: wrap;
+   
+}
+
+@media(max-width: 1100px) {
+    .conteiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    header nav { /*menu geral*/
+        height: 100%;
+        display: flex ;
+        flex-direction: column;
+       
+    } /*fim do menu geral*/
+    body .identacao .conteiner{
+        margin-left: 0px;
+    }
+    .conteiner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     
+    }
+  
+    .conteiner .vini {
+        width: 45%;
+        margin-left: 10px;
+    }
+    .conteiner .val{
+        width: 45%;
+    }
+    .conteiner .harry {
+      width: 45%;
+    }
+    .conteiner .lucas{
+      width: 45%;
+    }
+    .conteiner .josi {
+        width: 45%;
+    }
+    .conteiner .zanfra{
+        width: 45%;
+    }
+}
+
+@media(max-width: 480px) {
+    .conteiner {
+        height: 100%;
+        display: flex;
+        grid-template-columns: 1fr;
+    }
+}
